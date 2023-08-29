@@ -118,4 +118,6 @@ This project is new so expect bugs, for bugs you should open an issue.
 
 **Folders**
 make sure to create an empty folder called
-**audio** where the sounds will be stored.
+**audios** where the sounds will be stored.
+
+also you can set it to be stored in another folder.
