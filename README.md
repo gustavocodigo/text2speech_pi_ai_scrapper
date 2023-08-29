@@ -10,7 +10,7 @@ https://github.com/gustavocodigo/text2speech_pi_ai_scrapper/blob/main/audio-2023
 
 ```
 git clone https://github.com/gustavocodigo/text2speech_pi_ai_scrapper
-cd speech_pi_ai_scrapper
+cd text2speech_pi_ai_scrapper
 pip install -r requirements.txt
 ```
 
