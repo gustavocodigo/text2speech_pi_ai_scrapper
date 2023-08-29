@@ -38,11 +38,11 @@ For **windows** check on google chrome manually.
 ![image](https://github.com/gustavocodigo/text2speech_pi_ai_scrapper/assets/108258194/ca2d856b-a448-47b1-aff9-cee761e495b0)
 
 
-for windows users replace these lines:
+
 
 ![image](https://github.com/gustavocodigo/text2speech_pi_ai_scrapper/assets/108258194/0400cb6e-06b0-40f8-be72-aba8dcf1c341)
 
-
+ for windows users replace these lines:
  to the current drive path:
 
 ![image](https://github.com/gustavocodigo/text2speech_pi_ai_scrapper/assets/108258194/44d2d8ba-ba00-4267-93dc-26f831ace17b)
