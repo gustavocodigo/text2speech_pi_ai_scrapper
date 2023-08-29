@@ -114,3 +114,8 @@ a MP3 file media file as response
 # Warning
 
 This project is new so expect bugs, for bugs you should open an issue.
+
+
+**Folders**
+make sure to create an empty folder called
+**audio** where the sounds will be stored.
