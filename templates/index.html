@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Text to Voice pi.ai scrapper</h1>
+
+
+        <div>
+            <textarea id="text"></textarea>
+        </div>
+    
+        <div>
+            <audio controls id="audio">
+                <source id="audiosource" src="" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div>
+            <button id="gen">Generate</button>
+        </div>
+    </div>
+  
+
+</body>
+
+</html>
+
+
+
+<style>
+
+    body {
+        max-width: 400px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100svh;
+    }
+
+
+    body > div {
+        padding: 16px;
+    }
+    button {
+        cursor: pointer;
+        color: white;
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+
+    }
+
+    textarea {
+        width:100%;
+        min-height: 300px;
+        padding: 8px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+</style>
+
+
+
+
+<script>
+
+    let message = ""
+    const textElement = document.querySelector("#text")
+    const btnGen = document.querySelector("#gen");
+    const audioElement = document.querySelector("#audio");
+    const audioSource = document.querySelector("#audiosource");
+
+
+
+    let eventKeyUpMethod = (e) => {
+        message = e.target.value
+        if (message == "" || message.length >= 1000 ) {
+            btnGen.style.pointerEvents = "none"
+            btnGen.style.backgroundColor = "gray"
+            
+        } else {
+            btnGen.style.pointerEvents = "all"
+            btnGen.style.backgroundColor = "#1F883D"
+
+        }
+
+        btnGen.innerText = "Generate"
+
+        if (  message.length >= 1000 ) {
+            btnGen.innerText = "Message to big recomended is 1000, please remove: "+ (message.length - 1000) +" characteres."
+
+        }
+
+    }
+
+    eventKeyUpMethod({ target: textElement })
+
+    textElement.addEventListener("keyup", eventKeyUpMethod)
+
+    btnGen.addEventListener("click", async () => {
+        let ptext = encodeURIComponent(message)
+        let url = window.location.href + "generate_mp3?text=" + ptext
+        try {
+            btnGen.style.pointerEvents = "none"
+            btnGen.style.backgroundColor = "gray"
+            btnGen.innerText = "Loading..."
+            const response = await fetch(url);
+            const data = await response.json();
+            audioSource.src = window.location.href+"read_file?file="+encodeURIComponent(data.id)
+            audioElement.load()
+            console.log("DONE")
+            btnGen.innerText = "Generate"
+            btnGen.style.pointerEvents = "all"
+            btnGen.style.backgroundColor = "#225522"
+        } catch (error) {
+            console.error("Erro ao fazer o fetch:", error);
+            btnGen.style.backgroundColor = "#992222"
+            btnGen.innerText = "FAILED TO FETCH"
+
+        }
+
+
+      
+    })
+</script>
