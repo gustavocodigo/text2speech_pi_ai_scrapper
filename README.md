@@ -96,13 +96,14 @@ In case of **Success** it will return the body:
 access the file generated:
 
 https://localhost:5000/read_file?path={id}
+
 status code is **200**
 
 for error it will return status code **404**.
 
 in case of **Sucess** it will return
 
-a MP3 file media file
+a MP3 file media file as response
 
 
 
