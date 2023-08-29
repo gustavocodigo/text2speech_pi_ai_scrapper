@@ -47,7 +47,7 @@ For **windows** check on google chrome manually.
 
 ![image](https://github.com/gustavocodigo/text2speech_pi_ai_scrapper/assets/108258194/44d2d8ba-ba00-4267-93dc-26f831ace17b)
 
-and maybe change the paths caharacter **/** to **\\**
+and maybe change the paths characters **/** to \\\
 
 # Running the script 
 
