@@ -86,7 +86,11 @@ audios
 GET to 
 https://localhost:5000/generate_mp3?text={text}
 
-return for sucess statusCode 200 for error it will return 404.
+**OBS** the text length limit is **1000** for each text you enter.
+
+
+return for sucess statusCode **200**
+for error it will return **404** as status code.
 In case of **Success** it will return the body:
 ```
 {"id": "audio-2023-08-29-19-16-34-file.mp3"}
