@@ -30,7 +30,7 @@ google-chrome --version
 
 For **windows** check on google chrome manually.
 
-**after getting the drivers paste it in a folder called drivers:**
+**after getting the driver paste it in a folder called drivers:**
 
 ![image](https://github.com/gustavocodigo/text2speech_pi_ai_scrapper/assets/108258194/ca2d856b-a448-47b1-aff9-cee761e495b0)
 
