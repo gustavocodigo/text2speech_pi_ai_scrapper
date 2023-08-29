@@ -75,3 +75,9 @@ the audio will be displayed on the screen, that you can play directly and they a
 audios
 ```
 ![image](https://github.com/gustavocodigo/text2speech_pi_ai_scrapper/assets/108258194/26be59cb-059c-4090-bb7b-c5b952d3fd26)
+
+
+
+# Warning
+
+This project is new so expect bugs, for bugs you should open an issue.
