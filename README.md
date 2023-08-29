@@ -49,6 +49,14 @@ For **windows** check on google chrome manually.
 
 and maybe change the paths characters **/** to \\\
 
+
+**Folders**
+make sure to create an empty folder called
+**audios** where the sounds will be stored.
+
+
+also escape the correct folder for windows as commented before.
+
 # Running the script 
 
 
@@ -116,8 +124,6 @@ a MP3 file media file as response
 This project is new so expect bugs, for bugs you should open an issue.
 
 
-**Folders**
-make sure to create an empty folder called
-**audios** where the sounds will be stored.
+
 
 also you can set it to be stored in another folder.
