@@ -79,6 +79,33 @@ audios
 
 
 
+
+
+# Using as api
+
+GET to 
+https://localhost:5000/generate_mp3?text={text}
+
+return for sucess statusCode 200 for error it will return 404.
+In case of **Success** it will return the body:
+```
+{"id": "audio-2023-08-29-19-16-34-file.mp3"}
+```
+
+
+access the file generated:
+
+https://localhost:5000/read_file?path={id}
+status code is **200**
+
+for error it will return status code **404**.
+
+in case of **Sucess** it will return
+
+a MP3 file media file
+
+
+
 # Warning
 
 This project is new so expect bugs, for bugs you should open an issue.
