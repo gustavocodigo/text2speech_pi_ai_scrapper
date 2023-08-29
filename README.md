@@ -1,12 +1,12 @@
 # text2speech_pi_ai_scrapper
 This is a python project that converts text to AI speech !
 
-this is a example of generated audio file:
+this is a example of generated audio file:<br>
 
 https://github.com/gustavocodigo/text2speech_pi_ai_scrapper/blob/main/audio-2023-08-29-19-00-46-file.mp3
 
 
-installation:
+# Install:
 
 ```
 git clone https://github.com/gustavocodigo/text2speech_pi_ai_scrapper
@@ -68,9 +68,9 @@ to access the interface:
 
 ![image](https://github.com/gustavocodigo/text2speech_pi_ai_scrapper/assets/108258194/332f74bd-ff3d-4302-88ba-a0ee9443d02a)
 
-**you can type your text and click in generate**
+**you can type text then click in generate**
 
-the text will be displayed on the screeb, that you can play directly and they are saved in the folder
+the audio will be displayed on the screen, that you can play directly and they are saved in the folder
 ```
 audios
 ```
